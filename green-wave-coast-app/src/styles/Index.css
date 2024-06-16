@@ -1,0 +1,113 @@
+:root {
+    --colorOne: #65A584;
+    --colorTwo: #E7D378;
+    --colorThree: #CAAA5A;
+    --colorFour: #E08752;
+    --colorFive: #63383D;
+    --colorSix: #ffffff;
+    --colorFooter: #080B0C;
+    --fontSize: 16px;
+    --contactUsB: #ffea03;
+    --colorLinks: #45a049;
+    --colorSeven: #a0a0a0;
+}
+
+body {
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: "Marhey", sans-serif;
+};
+
+.headerMain{
+	display: flex;
+	justify-content: center;
+}
+
+
+.maindiv {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center; 
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+ main img{
+	width: 200px;
+}
+main h2 a{
+	font-size: 4rem;
+	/* color: var(--colorFooter); */
+	color:var(--colorLinks)
+}
+main h2{
+	font-size: 4rem;
+	color: var(--colorLinks);
+}
+.textContainer p a{
+	font-size: 4rem;
+	color: var(--colorOne);
+}
+
+.textContainer {
+	display: flex;
+	background-color: #ffffff;	
+	flex-direction: row;
+	align-items: center;
+
+}
+.textContainer p{
+	flex-grow: 1;
+	overflow: hidden;
+	background-color: var(--colorOne);
+	font-style: italic;
+	color: var(--colorFooter);
+	border-radius: 100px 18px 100px 17px;
+	margin: 3%;
+	padding: 6%;
+	
+	
+
+}
+.textContainer img {
+	border-radius: 100px 18px 100px 17px; 
+}
+  
+.headerbar li,
+.headerbar a,
+ main a{
+	list-style-type: none;
+	text-decoration: none;
+}
+.subscribe-container{
+	background-color: var(--colorFour);
+	width: 100%;
+}
+
+input[type="submit"],
+.subscription-container button {
+    background-color: var(--colorLinks);
+    color: var(--colorSix);
+    cursor: pointer;
+	padding: 10px;
+}
+
+input[type="submit"]:hover,
+.subscription-container button:hover {
+    background-color: #555;
+}
+
+.subscription-container h2 {
+    color: var(--colorLinks);
+}
+
+.containerhome{
+	display: flex;
+	background: url("/public/images/beautiful-shot-people-walking-wild-seashore-low-hills_181624-15927.jpg")center bottom/cover no-repeat padding-box fixed;
+	flex-direction: column;
+	width: 60%;
+	justify-content: center;
+	
+} 

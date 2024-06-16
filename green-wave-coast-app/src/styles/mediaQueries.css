@@ -1,0 +1,153 @@
+@media only screen and (max-width: 600px) {
+    .headerbar {
+        padding: 10px;
+    }
+
+    .LogoGreenWaveCoast {
+        width: 100px;
+    }
+
+    /* .headerbar ul {
+        display: none;
+    } */
+
+    .headerbar .header-bar-menu {
+        display: none;
+    }
+
+    .maindiv {
+        padding: 20px;
+    }
+	.title-home-page{
+		display: flex;
+		width: 80%;	
+
+	}
+
+    .title-home-page h1 {
+        font-size: 1.5rem;
+		font-weight: 90;	
+		
+    }
+   main h2 {
+        font-size: 1rem;
+
+    }
+
+   
+	.maindiv{
+		display: flex;
+		width: 90%;
+	}
+	.containerhome{
+		display:flex;
+	}
+	.headerMain a{
+		font-size: 2rem;
+	}
+	.textContainer{
+		display:flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
+	.textContainer img{
+		width: 100%;
+	}
+
+
+    .textContainer p {
+		display: none;
+        font-size: 16px;
+		width: 50%;
+	
+    }
+
+	@media only screen and (min-width: 601px) and (max-width: 1024px) { 
+		/* body{
+			background-color:blue;
+		}
+		 */
+	
+		.LogoGreenWaveCoast {
+			width: 100px;
+		}
+	
+		.headerbar ul {
+			display: none;
+		}
+	
+		.headerbar .header-bar-menu {
+			display: none;
+		}
+	
+		.maindiv {
+			padding: 26px;
+		}
+		.title-home-page{
+			display: flex;
+			width: 80%;	
+	
+		}
+	
+		.title-home-page h1 {
+			font-size: 2rem;
+			font-weight: 900;	
+			
+		}
+		.maindiv{
+			display: flex;
+			width: 100%;
+		}
+		.containerhome{
+			display: flex;
+		}
+		.headerMain a{
+			font-size: 2rem;
+		}
+		.textContainer{
+			display: flex;
+			flex-direction: column;
+			align-content: center;			
+			width: 100%;
+		}
+
+		.textContainer img{
+			width: 60%;
+		}
+	
+	
+		.textContainer p {
+			display: inline-block;			
+			font-size: .6rem;
+			width: 50%;
+		
+		}
+	}
+	
+
+
+	@media only screen and (min-width: 1025px) {
+		
+		.navegationBar {
+			display: none;
+		}
+		.textContainer{
+			display: flex;
+			flex-direction: column;
+			
+		}
+		.textContainer p {
+			display:block;			
+			font-size: 1rem;
+			width: 30%;
+		
+		}
+		.textContainer img{
+			width: 50%;
+		}
+	
+	
+	}
+
+
