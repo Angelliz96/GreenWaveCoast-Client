@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "../styles/Index.css";
 import "../styles/mediaQueries.css";
+import resources from "../data/resources";
 
 const Home = () => {
   const [allResources, setAllResources] = useState([]);
@@ -60,10 +61,10 @@ const Home = () => {
               planet thrive together.
             </p>
 
-            {/* <img
-              src="./public/images/bike-share.jpg"
+            <img
+              src="/public/images/2024.png"
               alt="Team Working together"
-            /> */}
+            />
           
         
 
@@ -84,7 +85,7 @@ const Home = () => {
                 {resource.description}
                 <br />
                 <img
-                  src={`/images/${resource.image}`}
+                  src={`/images${resources.image}`}
                   alt={resource.title}
                   // width="200"
                 />

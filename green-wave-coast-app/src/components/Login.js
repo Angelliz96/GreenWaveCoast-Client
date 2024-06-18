@@ -11,33 +11,22 @@ const LoginPage = ({ setUser }) => {
     e.preventDefault();
 
     const body = {
-      email: email,
-      password: password,
+      email: e.target.email.value,
+      password: e.target.email.value,
     };
 
-    fetch("http://localhost:8080/login/local", {
+    fetch(`http://localhost:8080/api/resources/create`, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
       body: JSON.stringify(body),
     })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
+      .then((response) => response.json())
       .then((result) => {
-        console.log("Login successful");
-        localStorage.setItem("user", JSON.stringify(result.data));
-        setUser(result.data);
-        navigate("/admin");
+        console.log(result);
+        navigate(`/user`);
       })
-      .catch((error) => {
-        console.error("Login error:", error);
-      });
+      .catch((error) => console.log("error :>> ", error));
   };
+
 
   return (
     <main>
@@ -82,7 +71,7 @@ const LoginPage = ({ setUser }) => {
           
         </p>
         <p>
-          <a href="create.html">Create Account</a>
+        <Link to="/reset">I forgot my password</Link>
         </p>
       </div>
     </main>

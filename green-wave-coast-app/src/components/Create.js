@@ -5,35 +5,26 @@ import { Link } from "react-router-dom";
 const Create = () => {
   const navigate = useNavigate();
 
-  const handleSubmit = async (event) => {
+  const handleSubmit =  (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
-    const body = {
-      username: formData.get("username"),
-      email: formData.get("email"),
-      password: formData.get("password"),
-      confirmPassword: formData.get("confirm-password"),
+    
+    const body = { 
+      username: event.target.username.value,
+      email: event.target.email.value,
+      password: event.target.email.value,
+      confirmPassword: event.target.confirmPassword.value,
     };
 
-    try {
-      const response = await fetch("http://localhost:8080/api/create", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(body),
-      });
-
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-
-      const result = await response.json();
-      console.log("Profile created successfully", result);
-      navigate("/profile");
-    } catch (error) {
-      console.error("Create error:", error);
-    }
+    fetch(`http://localhost:8080/api/resources/create`, {
+      method: "POST",
+      body: JSON.stringify(body),
+    })
+      .then((response) => response.json())
+      .then((result) => {
+        console.log(result);
+        navigate(`/user`);
+      })
+      .catch((error) => console.log("error :>> ", error));
   };
 
   return (
@@ -68,11 +59,11 @@ const Create = () => {
           <label htmlFor="password">Password:</label>
           <input type="password" id="password" name="password" required />
 
-          <label htmlFor="confirm-password">Confirm Password:</label>
+          <label htmlFor="confirmPassword">Confirm Password:</label>
           <input
             type="password"
-            id="confirm-password"
-            name="confirm-password"
+            id="confirmPassword"
+            name="confirmPassword"
             required
           />
 

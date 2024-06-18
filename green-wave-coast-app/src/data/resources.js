@@ -4,7 +4,7 @@ const resources = [
       title: "Renewable Energy Solutions",
       category: "Energy",
       description: "Explore sustainable and renewable energy solutions with our curated directory. Discover leading providers in solar and wind power, offering innovative technologies and expert installations for homes and businesses. Join us in promoting a cleaner, greener future with efficient energy solutions that benefit both your environment and your bottom line",
-      image: "windy-plains.jpg.jpeg",
+      image: "sunshine-solar.jpg",
       subcategories: [
         {
           title: "Solar Power",
@@ -16,7 +16,7 @@ const resources = [
               email: "info@sunshinesolar.com",
               webpage: "https://www.sunshinesolar.com",
               description: "Leading provider of solar panels and installation services.",
-              image: "sunshine-solar.jpg"
+              image: "windy-plains.jpg"
             }
           ]
         },
@@ -41,7 +41,7 @@ const resources = [
       title: " Local Food",
       category: "Food",
       description: "Delve into the vibrant world of local food with our diverse selection of farms and markets. From organic produce to artisanal goods, our listings showcase the best of local agriculture and community-supported foods. Explore sustainable practices and connect with farmers and markets committed to freshness, quality, and supporting local economies. Whether you're a food enthusiast or eco-conscious consumer, discover the delicious possibilities of local food right in your neighborhood",
-      image: "localmarket.jpg",
+      image: "local-market.jpg",
       subcategories: [
         {
           title: "Local Farms",
@@ -240,7 +240,7 @@ const resources = [
       title: "Water",
       category: "Water",
       description: "Promote water conservation and purity with our dedicated initiatives. Save Water Initiative leads the charge in advocating sustainable water practices, encouraging communities to adopt efficient water use strategies. Meanwhile, Pure Water Solutions ensures access to clean drinking water through state-of-the-art purification technologies, safeguarding public health and well-being. Embrace our commitment to water stewardship and join us in preserving this vital resource for future generations. Together, let's secure a sustainable water future for all.",
-      image: "cleaning.jpn",
+      image: "cleaning.jpg",
       subcategories: [
         {
           title: "Water Conservation",
