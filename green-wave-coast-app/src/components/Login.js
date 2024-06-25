@@ -22,7 +22,7 @@ const LoginPage = ({ setUser }) => {
       .then((response) => response.json())
       .then((result) => {
         console.log(result);
-        navigate(`/user`);
+        navigate(`/Update`);
       })
       .catch((error) => console.log("error :>> ", error));
   };
@@ -64,7 +64,7 @@ const LoginPage = ({ setUser }) => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <button type="submit">Login</button>
+          <input type="submit"value= "Login"/>
         </form>
         <p>
         <Link to="/create">Sign up</Link>

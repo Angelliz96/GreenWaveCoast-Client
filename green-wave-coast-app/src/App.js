@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Routes, Route } from "react-router-dom";
 import Header from './shared/Header';
 import Footer from './shared/Footer';
+import Admin from './components/Admin';
 import About from './components/About';
 import Contact from './components/Contact';
 import Create from './components/Create';
@@ -16,6 +17,7 @@ import Local from './components/Local';
 import Login from './components/Login';
 import Reset from './components/Reset';
 import Transportation from './components/Transportation';
+import Update from './components/Update';
 import User from './components/User';
 import Waste from './components/Waste';
 import WaterPage from './components/Water';
@@ -33,6 +35,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/create" element={<Create />} />
           <Route path="/education" element={<Education />} />
@@ -46,6 +49,8 @@ function App() {
           {/* <Route path="/resources" element={<Resources />} /> */}
           {/* <Route path="/sustainability" element={<Sustainability />} /> */}
           <Route path="/transportation" element={<Transportation />} />
+          <Route path="/update" element={<Update />} />
+
           <Route path="/user" element={<User user={user} />} /> 
           <Route path="/waste" element={<Waste />} />
           <Route path="/water" element={<WaterPage />} />

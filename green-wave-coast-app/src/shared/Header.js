@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar'; 
 import "./Header.css";
 
+
+
+
 const Header = ({ onSearch }) => {
   return (
     <header>

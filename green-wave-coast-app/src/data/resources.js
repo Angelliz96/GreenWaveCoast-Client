@@ -4,7 +4,7 @@ const resources = [
       title: "Renewable Energy Solutions",
       category: "Energy",
       description: "Explore sustainable and renewable energy solutions with our curated directory. Discover leading providers in solar and wind power, offering innovative technologies and expert installations for homes and businesses. Join us in promoting a cleaner, greener future with efficient energy solutions that benefit both your environment and your bottom line",
-      image: "sunshine-solar.jpg",
+      image: "sunshine-solar.jpeg",
       subcategories: [
         {
           title: "Solar Power",
@@ -30,7 +30,7 @@ const resources = [
               email: "contact@windyplains.com",
               webpage: "https://www.windyplains.com",
               description: "Harnessing wind energy for a sustainable future.",
-              image: "windy-plains.jpg"
+              image: "solarPanels.jpg"
             }
           ]
         }
@@ -41,7 +41,7 @@ const resources = [
       title: " Local Food",
       category: "Food",
       description: "Delve into the vibrant world of local food with our diverse selection of farms and markets. From organic produce to artisanal goods, our listings showcase the best of local agriculture and community-supported foods. Explore sustainable practices and connect with farmers and markets committed to freshness, quality, and supporting local economies. Whether you're a food enthusiast or eco-conscious consumer, discover the delicious possibilities of local food right in your neighborhood",
-      image: "local-market.jpg",
+      image: "local-market.jpeg",
       subcategories: [
         {
           title: "Local Farms",
@@ -54,7 +54,7 @@ const resources = [
               email: "info@greenvalleyfarm.com",
               webpage: "https://www.greenvalleyfarm.com",
               description: "Organic produce from local farmers.",
-              image: "green-valley-farm.jpg"
+              image: "green-valley-farm.jpeg"
             }
           ]
         },
@@ -69,7 +69,7 @@ const resources = [
               email: "info@dtfarmersmarket.com",
               webpage: "https://www.dtfarmersmarket.com",
               description: "Fresh and local produce every weekend.",
-              image: "downtown-market.jpg"
+              image: "downtown-market.jpeg"
             }
           ]
         }
@@ -80,7 +80,7 @@ const resources = [
       title: "Local Resources",
       category: "Local",
       description: "Explore the heart of your community with our curated listings of local businesses and community centers. Dive into the charm of neighborhood bakeries, cafes, and boutiques offering unique products and personalized service. Discover vibrant community centers that host a range of activities, from fitness classes to cultural events, fostering connections and enriching local life. Embrace the spirit of support and camaraderie that defines our local businesses and centers, where every visit leaves a positive impact on our shared community.",
-      image: "local-resources.jpg",
+      image: "local-resources.jpeg",
       subcategories: [
         {
           title: "Local Businesses",
@@ -93,7 +93,7 @@ const resources = [
               email: "contact@janesbakery.com",
               webpage: "https://www.janesbakery.com",
               description: "Delicious homemade bread and pastries.",
-              image: "janes-bakery.jpg"
+              image: "janes-bakery.jpeg"
             }
           ]
         },
@@ -108,7 +108,7 @@ const resources = [
               email: "info@communitycenter.com",
               webpage: "https://www.communitycenter.com",
               description: "Offering activities and services for all ages.",
-              image: "community-center.jpg"
+              image: "community-center.jpeg"
             }
           ]
         }
@@ -123,7 +123,7 @@ const resources = [
       category: "Government",
       webpage: "https://www.localgov.com",
       description: "Providing essential services and support to the community.",
-      image: "government-office.jpg",
+      image: "government-office.jpeg",
       subcategories: [
         {
           title: "Municipal Services",
@@ -136,7 +136,7 @@ const resources = [
               email: "contact@cityhall.com",
               webpage: "https://www.cityhall.com",
               description: "Administrative services for the city.",
-              image: "city-hall.jpg"
+              image: "city-hall.jpeg"
             }
           ]
         },
@@ -151,7 +151,7 @@ const resources = [
               email: "info@firedepartment.com",
               webpage: "https://www.firedepartment.com",
               description: "Fire safety and emergency response services.",
-              image: "fire-department.jpg"
+              image: "fire-department.jpeg"
             }
           ]
         }
@@ -162,7 +162,7 @@ const resources = [
       title: "Transportation",
       category: "Transportation",
       description: "Experience seamless mobility with our comprehensive transportation resources. Whether you prefer the convenience of public buses or the flexibility of bike-sharing programs, our city's transportation options cater to every journey. Navigate urban streets with ease aboard reliable city buses, connecting you to key destinations throughout the metropolitan area. Embrace sustainable travel with our bike-sharing initiatives, promoting eco-friendly commuting for short trips. Join us in reducing congestion and enhancing urban mobility with accessible and efficient transportation solutions designed to keep our city moving forward.",
-      image: "transportation.jpg",
+      image: "transportation.jpeg",
       subcategories: [
         {
           title: "Public Transport",
@@ -175,7 +175,7 @@ const resources = [
               email: "info@citybus.com",
               webpage: "https://www.citybus.com",
               description: "Reliable and affordable public bus service.",
-              image: "city-bus.jpg"
+              image: "city-bus.jpeg"
             }
           ]
         },
@@ -190,7 +190,7 @@ const resources = [
               email: "contact@bikeshare.com",
               webpage: "https://www.bikeshare.com",
               description: "Convenient bike sharing service for short trips.",
-              image: "bike-share.jpg"
+              image: "bike-share.jpeg"
             }
           ]
         }
@@ -201,7 +201,7 @@ const resources = [
       title: "Waste",
       category: "Waste",
       description: "Transform waste management into a sustainable practice with our dedicated services. At Eco Recycling, we provide comprehensive recycling solutions that empower individuals and businesses to reduce their environmental footprint. From paper and plastic to electronics and organic waste, our facilities are equipped to handle diverse recycling needs efficiently and responsibly. Partner with Clean City Waste Disposal for reliable waste collection and disposal services, ensuring a cleaner and greener environment for generations to come. Embrace eco-conscious choices and contribute to a cleaner community with our waste management initiatives",
-      image: "waste.jpg",
+      image: "waste.jpeg",
       subcategories: [
         {
           title: "Recycling Services",
@@ -214,7 +214,7 @@ const resources = [
               email: "info@ecorecycling.com",
               webpage: "https://www.ecorecycling.com",
               description: "Comprehensive recycling services for homes and businesses.",
-              image: "eco-recycling.jpg"
+              image: "eco-recycling.jpeg"
             }
           ]
         },
@@ -229,7 +229,7 @@ const resources = [
               email: "contact@cleanwaste.com",
               webpage: "https://www.cleanwaste.com",
               description: "Efficient waste collection and disposal services.",
-              image: "waste-disposal.jpg"
+              image: "waste-disposal.jpeg"
             }
           ]
         }
@@ -240,7 +240,7 @@ const resources = [
       title: "Water",
       category: "Water",
       description: "Promote water conservation and purity with our dedicated initiatives. Save Water Initiative leads the charge in advocating sustainable water practices, encouraging communities to adopt efficient water use strategies. Meanwhile, Pure Water Solutions ensures access to clean drinking water through state-of-the-art purification technologies, safeguarding public health and well-being. Embrace our commitment to water stewardship and join us in preserving this vital resource for future generations. Together, let's secure a sustainable water future for all.",
-      image: "cleaning.jpg",
+      image: "cleaning.jpeg",
       subcategories: [
         {
           title: "Water Conservation",
@@ -253,7 +253,7 @@ const resources = [
               email: "info@savewater.com",
               webpage: "https://www.savewater.com",
               description: "Promoting water conservation practices.",
-              image: "save-water.jpg"
+              image: "save-water.jpeg"
             }
           ]
         },
@@ -268,7 +268,7 @@ const resources = [
               email: "contact@purewater.com",
               webpage: "https://www.purewater.com",
               description: "Providing clean and safe drinking water.",
-              image: "pure-water.jpg"
+              image: "pure-water.jpeg"
             }
           ]
         }

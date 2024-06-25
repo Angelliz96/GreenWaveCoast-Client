@@ -32,19 +32,10 @@ const Home = () => {
         <h1>BUILD A SUSTAINABLE FUTURE ONE WAVE AT A TIME</h1>
       </div>
 
-      
-
       <div className="maindiv">
         
-          {/* <div className="headerMain"> */}
-          
-            <h2>
-              {/* <Link to="/about">About us</Link> */}
-            </h2>
-          {/* </div> */}
-          
 
-          <div className="textContainer">
+        <div className="textContainer">
           <div className="containerhome">
             <p>
               At GreenWaveCoast, we're passionate advocates for sustainable
@@ -61,45 +52,39 @@ const Home = () => {
               planet thrive together.
             </p>
 
-            <img
-              src="/public/images/2024.png"
-              alt="Team Working together"
-            />
-          
-        
+            <img src="/images/pexels-mads-thomsen-1178448.jpg" alt="Team Working together" />
 
-        <section>
-        <div className="containerhome">
-        
-          <h2>Resources</h2>
-          {errorMessage ? (
-            <p>{errorMessage}</p>
-          ) : (
-            allResources.map((resource) => (
-              <div className="individual-resources" key={resource.id}>
-                 {/* <Link to={`/resource/${resource.title}`}></Link> */}
-                 
-                 <h3> {resource.title}
-                  <br />
-                </h3>
-                {resource.description}
-                <br />
-                <img
-                  src={`/images${resources.image}`}
-                  alt={resource.title}
-                  // width="200"
-                />
-                </div>
-             
-            ))
-          )}
-           </div>
-        </section>
-        
-        </div>
-        </div>
+            <section>
+              <div className="containerHome">
+                <h2>Resources</h2>
+                {errorMessage ? (
+                  <p>{errorMessage}</p>
+                ) : (
+                  allResources.map((resource) => (
+                    <div className="individualResources" key={resource.id}>
+                      {/* <Link to={`/resource/${resource.title}`}></Link> */}
 
-        
+                      <h3>
+                        {" "}
+                        {resource.title}
+                        <br />
+                      </h3>
+                      <p>
+                      {resource.description}
+                      </p>
+                      <br />
+                      <img
+                        src={`/images/${resource.image}`}
+                        alt={resource.title}
+                        // width="200"
+                      />
+                    </div>
+                  ))
+                )}
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
     </main>
   );

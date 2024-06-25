@@ -12,8 +12,8 @@ const Admin = () => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-        const data = await response.json();
-        setResources(data);
+        const result = await response.json();
+        setResources(result.data);
       } catch (error) {
         console.error("Fetch error:", error);
       }
@@ -32,8 +32,7 @@ const Admin = () => {
       }
       console.log("Resource deleted successfully");
 
-      // Actualiza la lista de recursos después de eliminar
-      setResources(resources.filter(resource => resource.id !== resourceId));
+      setResources(resources.filter(resource => resource._id !== resourceId));
     } catch (error) {
       console.error("Delete error:", error);
     }
@@ -43,7 +42,7 @@ const Admin = () => {
     <div>
       <main>
         <h1>ADMIN PAGE</h1>
-        <button type="button" onClick={() => navigate('/create')}>ADD NEW RESOURCE</button>
+        <button type="button" onClick={() => navigate('/user')}>ADD NEW RESOURCE</button>
         <table>
           <thead>
             <tr>
@@ -54,13 +53,13 @@ const Admin = () => {
           </thead>
           <tbody>
             {resources.map((resource) => (
-              <tr key={resource.id}>
+              <tr key={resource._id}>
                 <td>{resource.title}</td>
                 <td>
-                  <button type="button" onClick={() => navigate(`/update/${resource.id}`)}>EDIT</button>
+                  <button type="button" onClick={() => navigate(`/user/${resource._id}`)}>EDIT</button>
                 </td>
                 <td>
-                  <button type="button" onClick={() => handleDelete(resource.id)}>DELETE</button>
+                  <button type="button" onClick={() => handleDelete(resource._id)}>DELETE</button>
                 </td>
               </tr>
             ))}

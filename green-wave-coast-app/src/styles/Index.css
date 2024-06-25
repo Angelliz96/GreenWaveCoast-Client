@@ -106,8 +106,9 @@ input[type="submit"]:hover,
 .containerhome{
 	display: flex;
 	background: url("/public/images/beautiful-shot-people-walking-wild-seashore-low-hills_181624-15927.jpg")center bottom/cover no-repeat padding-box fixed;
-	flex-direction: column;
+	flex-direction: row;
 	width: 60%;
 	justify-content: center;
+	flex-wrap: wrap;
 	
 } 

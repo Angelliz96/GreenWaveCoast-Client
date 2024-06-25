@@ -7,9 +7,9 @@
         width: 100px;
     }
 
-    /* .headerbar ul {
+    .headerbar ul {
         display: none;
-    } */
+    }
 
     .headerbar .header-bar-menu {
         display: none;
@@ -33,6 +33,10 @@
         font-size: 1rem;
 
     }
+
+	div .individual-resources{
+		display: flex;
+	}
 
    
 	.maindiv{
